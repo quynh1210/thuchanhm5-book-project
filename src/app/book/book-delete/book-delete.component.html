@@ -1,1 +1,20 @@
-<p>book-delete works!</p>
+<div>
+  <button  style="min-width: 120px"  class="btn btn-primary" routerLink="/">Trang chủ</button>
+  <h2 style="text-align: center">Xóa sách</h2>
+  <div>
+    <label>Tên sách:</label>
+    <p>{{book.title}}</p>
+  </div>
+  <div>
+    <label>Tác giả:</label>
+    <p>{{book.author}}</p>
+  </div>
+  <div>
+    <label>Mô tả:</label>
+    <p>{{book.description}}</p>
+  </div>
+  <div style="text-align: center">
+    <button  style="min-width: 120px; margin-right: 30px"  class="btn btn-secondary" routerLink="/">Quay lại</button>
+    <button  style="min-width: 120px"  class="btn btn-danger" (click)="deleteBook()">Xóa</button>
+  </div>
+</div>
